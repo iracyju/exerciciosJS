@@ -40,11 +40,11 @@ function calcularPesoIdeal(peso,altura,sexo){
     if(Imc<=35 && Imc<=39.99){
         return "IMC : " +Imc+ " Situação - Obesidade 2 (Severa), sexo : "+sexo
     }
-    if(Imc<40){
+    if(Imc>40){
         return "IMC : " +Imc+ " Situação -Obesidade 3 (Morbida), sexo : "+sexo
     }
 }
 
 
-var Imc=calcularPesoIdeal(45,1.60,'feminino')
+var Imc=calcularPesoIdeal(90,1.60,'feminino')
 console.log(Imc)
